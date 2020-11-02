@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Konstructivism</title>
+    <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+	$('.sidebar a').each(function() {
+		$(this).on('click', function(e) {
+			e.preventDefault();
+			var scrollTo = $(this).attr('href');
+			var whitespace = scrollTo == '#s1' ? 70 : 30;
+			$('html,body').animate({
+				scrollTop: $(scrollTo).offset().top - whitespace
+			}, 1000);
+		});
+	});
+});
+    </script>
+  </head>
+  <body>
+ <h1>Конструктивизм</h1>
+ <p>Конструктиви́зм — направление в изобразительном искусстве, архитектуре, фотографии и декоративно-прикладном искусстве, зародившееся в 1915 году и существовавшее в течение первой половины 1930 годов в СССР, затем в ряде других стран, прежде всего, в Германии (Баухаус) и Голландии (Де Стейл).[1] В некоторых случаях конструктивизм рассматривают как источник и составляющую часть интернационального стиля и как одно из течений, определивших развитие Нового ви́дения.</p>
+  </body>
+</html>
